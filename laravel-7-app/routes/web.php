@@ -19,3 +19,7 @@ Route::get('/', function () {
 
 Route::resource('contacts', 'ContactController');
 // Route::apiResource('contacts', 'ContactController'); // for restful api expose
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
